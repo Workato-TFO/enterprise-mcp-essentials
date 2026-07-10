@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enterprise MCP Essentials</title>
+  <style>
+    /* ── Tokens resolved from gutenberg/system/lab-skin.css :root — inlined so the page is self-contained; keep values in sync with the skin. ── */
+    :root {
+      --font-display: 'Besley', Georgia, 'Times New Roman', serif;
+      --font-body:    'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-label:   'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono:    'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+      --bg: #FBFBFA;
+      --bg-soft: #F4F4F2;
+      --ink: #111010;
+      --ink-2: #1F1F23;
+      --muted: #52525B;
+      --muted-2: #71717A;
+      --rule: #D4D4D0;
+      --rule-soft: #E4E4E0;
+      --accent: #0F8C7A;
+      --accent-soft: #67EADD;
+      --code-bg: #18181B;
+      --code-ink: #E4E4E7;
+      --measure: 720px;
+    }
+
+    /* ── Reset ───────────────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+    }
+    body {
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Page layout ─────────────────────────────────────────────────────── */
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── Header ──────────────────────────────────────────────────────────── */
+    .course-header {
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 24px;
+      margin-bottom: 40px;
+    }
+    .course-eyebrow {
+      font-family: var(--font-label);
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin: 0 0 8px;
+    }
+    .course-title {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: var(--ink-2);
+      margin: 0;
+    }
+
+    /* ── Tile grid (max 3 columns) ───────────────────────────────────────── */
+    .tile-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    /* ── Tile card ───────────────────────────────────────────────────────── */
+    .tile {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 24px;
+      background: var(--bg-soft);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      transition: transform 0.1s ease, box-shadow 0.1s ease, border-color 0.1s ease;
+      cursor: pointer;
+    }
+    .tile:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      border-color: var(--accent);
+    }
+    .tile-kicker {
+      font-family: var(--font-label);
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--muted);
+    }
+    .tile h2 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      line-height: 1.3;
+      color: var(--ink-2);
+      margin: 0;
+    }
+    .tile-meta {
+      font-family: var(--font-label);
+      font-size: 13px;
+      color: var(--muted-2);
+      margin-top: auto;
+      padding-top: 8px;
+    }
+
+    /* ── Footer ──────────────────────────────────────────────────────────── */
+    .page-footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--rule-soft);
+      font-family: var(--font-label);
+      font-size: 13px;
+      color: var(--muted-2);
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="course-header">
+      <p class="course-eyebrow">Course</p>
+      <h1 class="course-title">Enterprise MCP Essentials</h1>
+    </header>
+    <main>
+      <div class="tile-grid">
+        
+    <a class="tile" href="./mcp-1-customer-support-hub.html">
+      <span class="tile-kicker">Lab 1 of 3 · foundational</span>
+      <h2>Connect your assistant to an internal app</h2>
+      <span class="tile-meta">Build an App MCP Server · 90 minutes</span>
+    </a>
+
+    <a class="tile" href="./mcp-2-cross-functional.html">
+      <span class="tile-kicker">Lab 2 of 3 · intermediate</span>
+      <h2>Extend the hub across Salesforce and Jira</h2>
+      <span class="tile-meta">Build a Process MCP Server · 60 minutes</span>
+    </a>
+
+    <a class="tile" href="./mcp-3-tool-contract.html">
+      <span class="tile-kicker">Lab 3 of 3 · intermediate</span>
+      <h2>Fix the contract, not the prompt</h2>
+      <span class="tile-meta">Tune the Tool Contract · 45 minutes</span>
+    </a>
+      </div>
+    </main>
+    <footer class="page-footer">
+      Workato Academy · Enterprise MCP Essentials
+    </footer>
+  </div>
+</body>
+</html>
