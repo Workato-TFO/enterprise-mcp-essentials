@@ -3454,7 +3454,7 @@ html.nav-collapsed .shell{grid-template-columns:1fr;}
     .act-num[data-watermark]::after { content: '  ·  ' attr(data-watermark); font-weight: 400; letter-spacing: 0.03em; text-transform: none; color: var(--muted); }
   }
 </style>
-<style>.lab-trail a.trail-item{color:inherit;text-decoration:none;cursor:pointer}.lab-trail a.trail-item:hover,.lab-trail a.trail-item:focus-visible{text-decoration:underline}</style></head>
+</head>
 <body>
 
 
@@ -3576,7 +3576,7 @@ html.nav-collapsed .shell{grid-template-columns:1fr;}
   <main class="content" id="main">
       
       <header class="lab-head semantic-layout semantic-layout--opening" data-semantic-class="opening" data-guide-structure="lab-opening" id="lab-top">
-        <nav class="lab-trail" aria-label="Course location"><a class="trail-item trail-course" href="./index.html">Enterprise MCP Essentials</a><span class="trail-sep" aria-hidden="true">›</span><span class="trail-item">Build an App MCP Server</span></nav>
+        <nav class="lab-trail" aria-label="Course location"><span class="trail-item">Enterprise MCP Essentials</span><span class="trail-sep" aria-hidden="true">›</span><span class="trail-item">Build an App MCP Server</span></nav>
         <h1>Connect your assistant to an internal app</h1>
         <div class="lab-attrs">
           <span class="attr attr-tier"><span class="lvl"><i class="on"></i><i></i><i></i></span> Foundational</span>
@@ -3694,7 +3694,7 @@ html.nav-collapsed .shell{grid-template-columns:1fr;}
             <aside class="co co-key" role="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5" /><path d="m21 2-9.6 9.6" /><path d="m15.5 7.5 3 3L22 7l-3-3" /></svg><div><p class="co-label">Pattern</p><div class="co-body"><p><strong>Authenticated connection</strong></p><p>An MCP server can only reach what the underlying connection can reach. Before any tool works, the connection has to authenticate against the real system — here, Confluence Cloud via an Atlassian API token. The token is the credential; the connection is the reusable, audited path every tool shares.</p></div></div></aside>
           </header>
           <div class="phase-tasks">
-      <article class="task task-v2 semantic-layout semantic-layout--guided-activity" data-semantic-class="guided-activity" data-guide-structure="task" id="task-1.1" data-task-id="1.1">
+      <article class="task task-v2 semantic-layout semantic-layout--hands-on-activity" data-semantic-class="hands-on-activity" data-guide-structure="task" id="task-1.1" data-task-id="1.1">
         <header class="task-head">
           <span class="task-id">1.1</span>
           <h3 class="task-title">Get into the training environment</h3>
@@ -3751,7 +3751,7 @@ html.nav-collapsed .shell{grid-template-columns:1fr;}
       </article>
     
 
-      <article class="task task-v2 semantic-layout semantic-layout--guided-activity" data-semantic-class="guided-activity" data-guide-structure="task" id="task-1.2" data-task-id="1.2">
+      <article class="task task-v2 semantic-layout semantic-layout--hands-on-activity" data-semantic-class="hands-on-activity" data-guide-structure="task" id="task-1.2" data-task-id="1.2">
         <header class="task-head">
           <span class="task-id">1.2</span>
           <h3 class="task-title">Authenticate the Confluence connection</h3>
@@ -3771,7 +3771,7 @@ html.nav-collapsed .shell{grid-template-columns:1fr;}
       </section>
     
           
-          <div class="config-card"><div class="card-label">Apply these values</div><div class="table-wrap"><table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>Connection type</td><td>Cloud</td></tr><tr><td>Auth type</td><td>API token</td></tr><tr><td>Confluence subdomain</td><td><code>training-workatolabs</code></td></tr><tr><td>Email</td><td><code>att###user@training.workatolabs.com</code></td></tr><tr><td>API token</td><td>The token you create at id.atlassian.com</td></tr></tbody></table></div></div>
+          <div class="config-card"><div class="card-label">Apply these values</div><div class="table-wrap"><table><thead><tr><th>Field</th><th>Value</th></tr></thead><tbody><tr><td>Connection type</td><td>Cloud</td></tr><tr><td>Auth type</td><td>API token</td></tr><tr><td>Confluence subdomain</td><td><code>training-workatolabs</code></td></tr><tr><td>Email</td><td><code>wow###user@training.workatolabs.com</code></td></tr><tr><td>API token</td><td>The token you create at id.atlassian.com</td></tr></tbody></table></div></div>
           
           <details class="task-do-it steps-block" open>
             <summary aria-label="Detailed steps — 6 steps">
@@ -3788,7 +3788,7 @@ html.nav-collapsed .shell{grid-template-columns:1fr;}
       </li>
       <li class="step" data-task="1.2">
         <label class="step-toggle"><span class="step-num">1.2.2</span><input type="checkbox" class="step-check" aria-label="Mark step complete"></label>
-        <span class="step-body">At the bottom of the connection form, click the <strong>id.atlassian.com</strong> link to open the Atlassian API token page in a new tab. Sign in with <code>att###user@training.workatolabs.com</code> if prompted.</span>
+        <span class="step-body">At the bottom of the connection form, click the <strong>id.atlassian.com</strong> link to open the Atlassian API token page in a new tab. Sign in with <code>wow###user@training.workatolabs.com</code> if prompted.</span>
         
       </li><li class="step-aside" data-kind="image">
       <figure class="lab-shot">
@@ -3851,7 +3851,7 @@ html.nav-collapsed .shell{grid-template-columns:1fr;}
             <aside class="co co-key" role="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5" /><path d="m21 2-9.6 9.6" /><path d="m15.5 7.5 3 3L22 7l-3-3" /></svg><div><p class="co-label">Pattern</p><div class="co-body"><p><strong>Pre-built MCP server</strong></p><p>You rarely build an MCP server tool-by-tool. Workato's pre-built Confluence MCP server ships a curated tool set (search, get, create, update, label, archive) plus sensible defaults, so you start from a working surface and prune. Server instructions are the other half: they tell the model what the server is for and how to sequence the tools.</p></div></div></aside>
           </header>
           <div class="phase-tasks">
-      <article class="task task-v2 semantic-layout semantic-layout--guided-activity" data-semantic-class="guided-activity" data-guide-structure="task" id="task-2.1" data-task-id="2.1">
+      <article class="task task-v2 semantic-layout semantic-layout--hands-on-activity" data-semantic-class="hands-on-activity" data-guide-structure="task" id="task-2.1" data-task-id="2.1">
         <header class="task-head">
           <span class="task-id">2.1</span>
           <h3 class="task-title">Spin up the pre-built Confluence server</h3>
@@ -3930,7 +3930,7 @@ html.nav-collapsed .shell{grid-template-columns:1fr;}
       </article>
     
 
-      <article class="task task-v2 semantic-layout semantic-layout--guided-activity" data-semantic-class="guided-activity" data-guide-structure="task" id="task-2.2" data-task-id="2.2">
+      <article class="task task-v2 semantic-layout semantic-layout--hands-on-activity" data-semantic-class="hands-on-activity" data-guide-structure="task" id="task-2.2" data-task-id="2.2">
         <header class="task-head">
           <span class="task-id">2.2</span>
           <h3 class="task-title">Give the server its instructions</h3>
@@ -3996,7 +3996,7 @@ html.nav-collapsed .shell{grid-template-columns:1fr;}
       </article>
     
 
-      <article class="task task-v2 semantic-layout semantic-layout--guided-activity" data-semantic-class="guided-activity" data-guide-structure="task" id="task-2.3" data-task-id="2.3">
+      <article class="task task-v2 semantic-layout semantic-layout--hands-on-activity" data-semantic-class="hands-on-activity" data-guide-structure="task" id="task-2.3" data-task-id="2.3">
         <header class="task-head">
           <span class="task-id">2.3</span>
           <h3 class="task-title">Grab the server's address</h3>
@@ -4068,7 +4068,7 @@ html.nav-collapsed .shell{grid-template-columns:1fr;}
             <aside class="co co-key" role="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5" /><path d="m21 2-9.6 9.6" /><path d="m15.5 7.5 3 3L22 7l-3-3" /></svg><div><p class="co-label">Pattern</p><div class="co-body"><p><strong>Custom MCP client app</strong></p><p>An MCP server is useless until a client connects to it. The client (LibreChat here, Claude in the appendix) reads the server's instructions and tool descriptions to decide what to call. Adding the server is the handshake; selecting it in a conversation is the activation.</p></div></div></aside>
           </header>
           <div class="phase-tasks">
-      <article class="task task-v2 semantic-layout semantic-layout--guided-activity" data-semantic-class="guided-activity" data-guide-structure="task" id="task-3.1" data-task-id="3.1">
+      <article class="task task-v2 semantic-layout semantic-layout--hands-on-activity" data-semantic-class="hands-on-activity" data-guide-structure="task" id="task-3.1" data-task-id="3.1">
         <header class="task-head">
           <span class="task-id">3.1</span>
           <h3 class="task-title">Register the server as a custom MCP connection</h3>
@@ -4144,7 +4144,7 @@ html.nav-collapsed .shell{grid-template-columns:1fr;}
       </article>
     
 
-      <article class="task task-v2 semantic-layout semantic-layout--guided-activity" data-semantic-class="guided-activity" data-guide-structure="task" id="task-3.2" data-task-id="3.2">
+      <article class="task task-v2 semantic-layout semantic-layout--hands-on-activity" data-semantic-class="hands-on-activity" data-guide-structure="task" id="task-3.2" data-task-id="3.2">
         <header class="task-head">
           <span class="task-id">3.2</span>
           <h3 class="task-title">Ask the client what your server can do</h3>
@@ -4221,7 +4221,7 @@ html.nav-collapsed .shell{grid-template-columns:1fr;}
             <aside class="co co-key" role="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="15.5" r="5.5" /><path d="m21 2-9.6 9.6" /><path d="m15.5 7.5 3 3L22 7l-3-3" /></svg><div><p class="co-label">Pattern</p><div class="co-body"><p><strong>Retrieval and write-back</strong></p><p>Read tools (search, get) ground the model in real content; write tools (create, update, label) let it act. The same server does both.</p></div></div></aside>
           </header>
           <div class="phase-tasks">
-      <article class="task task-v2 semantic-layout semantic-layout--guided-activity" data-semantic-class="guided-activity" data-guide-structure="task" id="task-4.1" data-task-id="4.1">
+      <article class="task task-v2 semantic-layout semantic-layout--hands-on-activity" data-semantic-class="hands-on-activity" data-guide-structure="task" id="task-4.1" data-task-id="4.1">
         <header class="task-head">
           <span class="task-id">4.1</span>
           <h3 class="task-title">Pull a real SOP into the chat</h3>
@@ -4268,7 +4268,7 @@ html.nav-collapsed .shell{grid-template-columns:1fr;}
       </article>
     
 
-      <article class="task task-v2 semantic-layout semantic-layout--guided-activity" data-semantic-class="guided-activity" data-guide-structure="task" id="task-4.2" data-task-id="4.2">
+      <article class="task task-v2 semantic-layout semantic-layout--hands-on-activity" data-semantic-class="hands-on-activity" data-guide-structure="task" id="task-4.2" data-task-id="4.2">
         <header class="task-head">
           <span class="task-id">4.2</span>
           <h3 class="task-title">Turn a legacy PDF into a living wiki page</h3>
